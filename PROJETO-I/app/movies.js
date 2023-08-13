@@ -6,7 +6,11 @@ export async function getMovies(moviesEndPoint, genreId) {
         const movies = data.results;
 
         if (genreId != 0) {
+
             return movies.filter(movie => movie.genre_ids.includes(parseInt(genreId)));
+            // movie.genre_ids -> é um array de ids de gêneros
+            // .includes() -> verifica se o id do gênero passado como parâmetro está dentro do array de ids de gêneros
+
         } else {
             return movies;
         }   
