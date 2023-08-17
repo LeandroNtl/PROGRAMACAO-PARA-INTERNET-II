@@ -1,5 +1,5 @@
 
-export const apiKey = "975ed46d090eda4857c7ba9151094fc0"
+export const apiKey = ""
 
 export const endPoints = {
     "Movies": `https://api.themoviedb.org/3/discover/movie?language=pt-BR&api_key=${apiKey}`,
